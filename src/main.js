@@ -33,29 +33,61 @@ document.addEventListener('DOMContentLoaded', () => {
   // 2. MENÚ RESPONSIVE EN MÓVILES
   const mobileToggle = document.getElementById('mobileToggle');
   const mobileMenu = document.getElementById('mobileMenu');
+  const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+
+  function openMobileMenu() {
+    if (!mobileMenu || !mobileToggle) return;
+    mobileMenu.classList.add('open');
+    mobileToggle.setAttribute('aria-expanded', 'true');
+    if (mobileMenuOverlay) mobileMenuOverlay.classList.add('active');
+    document.body.classList.add('menu-open');
+  }
+
+  function closeMobileMenu() {
+    if (!mobileMenu || !mobileToggle) return;
+    mobileMenu.classList.remove('open');
+    mobileToggle.setAttribute('aria-expanded', 'false');
+    if (mobileMenuOverlay) mobileMenuOverlay.classList.remove('active');
+    document.body.classList.remove('menu-open');
+  }
 
   if (mobileToggle && mobileMenu) {
     mobileToggle.addEventListener('click', () => {
-      const isOpen = mobileMenu.classList.toggle('open');
-      mobileToggle.setAttribute('aria-expanded', isOpen);
+      const isOpen = mobileMenu.classList.contains('open');
+      if (isOpen) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
     });
+
+    if (mobileMenuOverlay) {
+      mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+    }
 
     // Cerrar al hacer clic en cualquier enlace móvil
     mobileMenu.querySelectorAll('.mobile-link').forEach((link) => {
       link.addEventListener('click', () => {
-        mobileMenu.classList.remove('open');
-        mobileToggle.setAttribute('aria-expanded', 'false');
+        closeMobileMenu();
       });
+    });
+
+    // Cerrar si la pantalla se agranda a tamaño escritorio
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768 && mobileMenu.classList.contains('open')) {
+        closeMobileMenu();
+      }
     });
   }
 
   // 3. NAVEGACIÓN ACTIVA (SCROLL SPY)
   const navLinks = document.querySelectorAll('.nav-link');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
   const sections = document.querySelectorAll('section[id]');
 
-  window.addEventListener('scroll', () => {
+  function updateActiveNav() {
     let currentId = '';
-    const scrollPos = window.scrollY + 120;
+    const scrollPos = window.scrollY + 140;
 
     sections.forEach((section) => {
       const top = section.offsetTop;
@@ -66,33 +98,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     navLinks.forEach((link) => {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === `#${currentId}`) {
-        link.classList.add('active');
-      }
+      link.classList.toggle('active', link.getAttribute('href') === `#${currentId}`);
     });
-  });
 
-  // 4. ACCIONES DE COPIADO AL PORTAPAPELES
-  const copyEmailBtn = document.getElementById('copyEmailBtn');
-  const emailVal = document.getElementById('emailVal');
-
-  if (copyEmailBtn && emailVal) {
-    copyEmailBtn.addEventListener('click', () => {
-      const email = emailVal.textContent.trim();
-      copyToClipboard(email, '✓ Email copiado al portapapeles');
+    mobileLinks.forEach((link) => {
+      link.classList.toggle('active', link.getAttribute('href') === `#${currentId}`);
     });
   }
 
-  const copyPhoneBtn = document.getElementById('copyPhoneBtn');
-  const phoneVal = document.getElementById('phoneVal');
+  window.addEventListener('scroll', updateActiveNav, { passive: true });
+  updateActiveNav();
 
-  if (copyPhoneBtn && phoneVal) {
-    copyPhoneBtn.addEventListener('click', () => {
-      const phone = phoneVal.textContent.trim();
-      copyToClipboard(phone, '✓ Celular copiado: 221 561 5096');
-    });
-  }
+
 
   function copyToClipboard(text, successMessage) {
     if (navigator.clipboard && window.isSecureContext) {
@@ -165,8 +182,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Cerrar con tecla Escape
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && cvModal && cvModal.classList.contains('active')) {
-      closeCVModal();
+    if (e.key === 'Escape') {
+      if (cvModal && cvModal.classList.contains('active')) {
+        closeCVModal();
+      } else if (mobileMenu && mobileMenu.classList.contains('open')) {
+        closeMobileMenu();
+      }
     }
   });
 

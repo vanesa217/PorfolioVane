@@ -48,14 +48,32 @@
       </div>
 
       <!-- Mobile Dropdown Menu -->
-      <div class="mobile-menu" id="mobileMenu">
-        <a href="#sobre-mi" class="mobile-link">SOBRE MÍ</a>
-        <a href="#proyectos" class="mobile-link">PROYECTOS</a>
-        <a href="#habilidades" class="mobile-link">HABILIDADES</a>
-        <a href="#trayectoria" class="mobile-link">TRAYECTORIA</a>
-        <a href="#contacto" class="mobile-link">CONTACTO</a>
+      <div class="mobile-menu" id="mobileMenu" aria-label="Menú principal móvil">
+        <a href="#sobre-mi" class="mobile-link">
+          <span>SOBRE MÍ</span>
+          <span class="mobile-link-num">01</span>
+        </a>
+        <a href="#proyectos" class="mobile-link">
+          <span>PROYECTOS</span>
+          <span class="mobile-link-num">02</span>
+        </a>
+        <a href="#habilidades" class="mobile-link">
+          <span>HABILIDADES</span>
+          <span class="mobile-link-num">03</span>
+        </a>
+        <a href="#trayectoria" class="mobile-link">
+          <span>TRAYECTORIA</span>
+          <span class="mobile-link-num">04</span>
+        </a>
+        <a href="#contacto" class="mobile-link">
+          <span>CONTACTO</span>
+          <span class="mobile-link-num">05</span>
+        </a>
       </div>
     </header>
+
+    <!-- Backdrop Overlay for Mobile Navigation -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay" aria-hidden="true"></div>
 
     <main class="main-content" id="inicio">
       <div class="container layout-wrapper">
@@ -298,7 +316,7 @@
             <div class="section-header">
               <div class="section-node-marker" aria-hidden="true"></div>
               <span class="section-tag">TRAYECTORIA</span>
-              <h2 class="section-title">Formación y experiencia</h2>
+              <h2 class="section-title">Formación académica</h2>
             </div>
 
             <!-- Academic Timeline -->
@@ -327,35 +345,6 @@
                 </div>
               </div>
             </div>
-
-            <!-- Labor Experience Subheader & Timeline -->
-            <div class="experience-group">
-              <h3 class="timeline-subheading">EXPERIENCIA LABORAL</h3>
-
-              <div class="timeline-item">
-                <span class="timeline-year">2018 – 2019</span>
-                <div class="timeline-details">
-                  <h3 class="timeline-title">Cajera y atención al público · Supermercado Don Ciro</h3>
-                  <p class="timeline-subtitle">Berisso</p>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <span class="timeline-year">2014 – 2016</span>
-                <div class="timeline-details">
-                  <h3 class="timeline-title">Promotora de ventas y call center · DirecTV</h3>
-                  <p class="timeline-subtitle">La Plata</p>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <span class="timeline-year">2010 – 2013</span>
-                <div class="timeline-details">
-                  <h3 class="timeline-title">Vendedora, repositora y cajera · Casa Basal</h3>
-                  <p class="timeline-subtitle">Berisso</p>
-                </div>
-              </div>
-            </div>
           </section>
 
           <!-- CONTACTO SECTION -->
@@ -377,35 +366,12 @@
                 <div class="contact-row">
                   <div class="contact-data-box">
                     <span class="data-icon">✉</span>
-                    <span class="data-value" id="emailVal">tarellivanesacarolina@gmail.com</span>
+                    <a href="mailto:tarellivanesacarolina@gmail.com" class="data-value email-link" id="emailVal">tarellivanesacarolina@gmail.com</a>
                   </div>
                   <div class="contact-row-actions">
-                    <button class="btn btn-outline-action" id="copyEmailBtn" aria-label="Copiar email">
-                      Copiar email
-                    </button>
-                    <a href="mailto:tarellivanesacarolina@gmail.com" class="btn btn-outline-action btn-icon-only" title="Enviar correo">
-                      ↗
+                    <a href="mailto:tarellivanesacarolina@gmail.com" class="btn btn-primary" title="Enviar correo">
+                      Enviar correo ↗
                     </a>
-                  </div>
-                </div>
-
-                <!-- Celular / WhatsApp Channel (User Request Requirement) -->
-                <div class="contact-row highlight-phone">
-                  <div class="contact-data-box">
-                    <span class="data-icon">📱</span>
-                    <span class="data-value" id="phoneVal">221 561 5096</span>
-                    <span class="phone-badge">Berisso / La Plata</span>
-                  </div>
-                  <div class="contact-row-actions">
-                    <a href="tel:+5492215615096" class="btn btn-primary btn-call" aria-label="Llamar al celular">
-                      📞 Llamar
-                    </a>
-                    <a href="https://wa.me/5492215615096?text=Hola%20Vanesa,%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20conversar." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" aria-label="Enviar WhatsApp">
-                      💬 WhatsApp
-                    </a>
-                    <button class="btn btn-outline-action" id="copyPhoneBtn" aria-label="Copiar número de celular">
-                      Copiar celular
-                    </button>
                   </div>
                 </div>
               </div>
@@ -441,10 +407,12 @@
           </div>
           <div class="cv-modal-controls">
             <button class="btn btn-primary btn-sm" id="cvPrintBtn" title="Imprimir o guardar como PDF">
-              🖨 Imprimir / Guardar PDF
+              <span class="btn-text">🖨 Imprimir / Guardar PDF</span>
+              <span class="btn-icon-compact" aria-hidden="true">🖨 Imprimir</span>
             </button>
             <a href="/cv.pdf" download="Vanesa_Tarelli_CV.pdf" class="btn btn-outline btn-sm" title="Descargar archivo PDF directo">
-              📥 Descargar .PDF
+              <span class="btn-text">📥 Descargar .PDF</span>
+              <span class="btn-icon-compact" aria-hidden="true">📥 .PDF</span>
             </a>
             <button class="btn-close-modal" id="cvCloseBtn" aria-label="Cerrar ventana de CV">
               ✕
@@ -466,7 +434,6 @@
                 <p class="cv-degree">Técnica Superior en Automatización y Control · Electricista Industrial</p>
                 <div class="cv-contact-chips">
                   <span>📍 Berisso, Buenos Aires</span>
-                  <span>📱 <a href="tel:+5492215615096">221 561 5096</a></span>
                   <span>✉ <a href="mailto:tarellivanesacarolina@gmail.com">tarellivanesacarolina@gmail.com</a></span>
                   <span>🔗 <a href="https://www.linkedin.com/in/vanesa-tarelli-1b93aa261" target="_blank" rel="noopener noreferrer">linkedin.com/in/vanesa-tarelli-1b93aa261</a></span>
                 </div>
@@ -568,34 +535,6 @@
                   <span class="cv-item-date">2020 – 2021</span>
                 </div>
                 <p class="cv-item-sub">ISFT N° 193 "Astillero Río Santiago"</p>
-              </div>
-            </section>
-
-            <!-- Experiencia Laboral -->
-            <section class="cv-section">
-              <h3 class="cv-sec-title">EXPERIENCIA LABORAL</h3>
-              <div class="cv-item">
-                <div class="cv-item-header">
-                  <strong>Cajera y atención al público · Supermercado Don Ciro</strong>
-                  <span class="cv-item-date">2018 – 2019</span>
-                </div>
-                <p class="cv-item-sub">Berisso</p>
-              </div>
-
-              <div class="cv-item">
-                <div class="cv-item-header">
-                  <strong>Promotora de ventas y call center · DirecTV</strong>
-                  <span class="cv-item-date">2014 – 2016</span>
-                </div>
-                <p class="cv-item-sub">La Plata</p>
-              </div>
-
-              <div class="cv-item">
-                <div class="cv-item-header">
-                  <strong>Vendedora, repositora y cajera · Casa Basal</strong>
-                  <span class="cv-item-date">2010 – 2013</span>
-                </div>
-                <p class="cv-item-sub">Berisso</p>
               </div>
             </section>
           </div>

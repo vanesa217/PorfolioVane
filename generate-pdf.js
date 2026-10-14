@@ -3,54 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 function createSimplePDF() {
-  const content = `%PDF-1.4
-1 0 obj
-<<
-  /Type /Catalog
-  /Pages 2 0 R
->>
-endobj
-2 0 obj
-<<
-  /Type /Pages
-  /Kids [3 0 R]
-  /Count 1
->>
-endobj
-3 0 obj
-<<
-  /Type /Page
-  /Parent 2 0 R
-  /MediaBox [0 0 595.28 841.89]
-  /Contents 4 0 R
-  /Resources <<
-    /Font <<
-      /F1 5 0 R
-      /F2 6 0 R
-    >>
-  >>
->>
-endobj
-5 0 obj
-<<
-  /Type /Font
-  /Subtype /Type1
-  /BaseFont /Helvetica-Bold
->>
-endobj
-6 0 obj
-<<
-  /Type /Font
-  /Subtype /Type1
-  /BaseFont /Helvetica
->>
-endobj
-4 0 obj
-<<
-  /Length 1950
->>
-stream
-BT
+  const streamBody = `BT
 /F1 22 Tf
 50 790 Td
 (Vanesa Carolina Tarelli) Tj
@@ -59,7 +12,7 @@ BT
 (Desarrolladora Frontend - HTML, CSS y JavaScript) Tj
 0 -18 Td
 /F2 10 Tf
-(Berisso, Buenos Aires | Celular: +54 9 221 561-5096 | tarellivanesacarolina@gmail.com) Tj
+(Berisso, Buenos Aires | tarellivanesacarolina@gmail.com) Tj
 0 -14 Td
 (LinkedIn: linkedin.com/in/vanesa-tarelli-1b93aa261) Tj
 0 -26 Td
@@ -125,41 +78,40 @@ BT
 0 -14 Td
 /F2 10 Tf
 (ISFT N 193 "Astillero Rio Santiago") Tj
-0 -24 Td
-/F1 12 Tf
-(EXPERIENCIA LABORAL) Tj
-0 -16 Td
-/F1 10 Tf
-(2018 - 2019 | Cajera y Atencion al Publico - Supermercado Don Ciro, Berisso) Tj
-0 -16 Td
-/F1 10 Tf
-(2014 - 2016 | Promotora de Ventas y Call Center - DirecTV, La Plata) Tj
-0 -16 Td
-/F1 10 Tf
-(2010 - 2013 | Vendedora, Repositora y Cajera - Casa Basal, Berisso) Tj
-ET
-endstream
-endobj
-xref
-0 7
-0000000000 65535 f 
-0000000010 00000 n 
-0000000060 00000 n 
-0000000117 00000 n 
-0000000300 00000 n 
-0000000216 00000 n 
-0000000280 00000 n 
-trailer
-<<
-  /Size 7
-  /Root 1 0 R
->>
-startxref
-2350
-%%EOF`;
+ET`;
+
+  const streamLength = Buffer.byteLength(streamBody, 'utf8');
+
+  const objects = [
+    null,
+    `1 0 obj\n<<\n  /Type /Catalog\n  /Pages 2 0 R\n>>\nendobj\n`,
+    `2 0 obj\n<<\n  /Type /Pages\n  /Kids [3 0 R]\n  /Count 1\n>>\nendobj\n`,
+    `3 0 obj\n<<\n  /Type /Page\n  /Parent 2 0 R\n  /MediaBox [0 0 595.28 841.89]\n  /Contents 4 0 R\n  /Resources <<\n    /Font <<\n      /F1 5 0 R\n      /F2 6 0 R\n    >>\n  >>\n>>\nendobj\n`,
+    `4 0 obj\n<<\n  /Length ${streamLength}\n>>\nstream\n${streamBody}\nendstream\nendobj\n`,
+    `5 0 obj\n<<\n  /Type /Font\n  /Subtype /Type1\n  /BaseFont /Helvetica-Bold\n>>\nendobj\n`,
+    `6 0 obj\n<<\n  /Type /Font\n  /Subtype /Type1\n  /BaseFont /Helvetica\n>>\nendobj\n`
+  ];
+
+  let pdf = '%PDF-1.4\n';
+  const offsets = [0];
+
+  for (let i = 1; i <= 6; i++) {
+    offsets[i] = Buffer.byteLength(pdf, 'utf8');
+    pdf += objects[i];
+  }
+
+  const startXref = Buffer.byteLength(pdf, 'utf8');
+  let xref = `xref\n0 7\n0000000000 65535 f \n`;
+  for (let i = 1; i <= 6; i++) {
+    xref += String(offsets[i]).padStart(10, '0') + ' 00000 n \n';
+  }
+
+  const trailer = `trailer\n<<\n  /Size 7\n  /Root 1 0 R\n>>\nstartxref\n${startXref}\n%%EOF\n`;
+
+  pdf += xref + trailer;
 
   const dest = path.resolve('public', 'cv.pdf');
-  fs.writeFileSync(dest, content);
+  fs.writeFileSync(dest, pdf);
   console.log('CV PDF written to:', dest);
 }
 
