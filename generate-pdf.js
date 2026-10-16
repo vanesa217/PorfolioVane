@@ -9,7 +9,7 @@ function createSimplePDF() {
 (Vanesa Carolina Tarelli) Tj
 0 -24 Td
 /F1 13 Tf
-(Creadora Full Stack - Control & Automatizaciones Web) Tj
+(Creadora Full Stack - Control & Automatizacion Web) Tj
 0 -18 Td
 /F2 10 Tf
 (Berisso, Buenos Aires | tarellivanesacarolina@gmail.com) Tj
@@ -24,7 +24,7 @@ function createSimplePDF() {
 0 -14 Td
 (creacion web Full Stack, contraloria tecnica y diagnostico de calidad en software,) Tj
 0 -14 Td
-(y automatizaciones web optimizadas con IA agentica \(Antigravity, Gemini, Copilot\).) Tj
+(y automatizacion web optimizada con IA agentica \(Antigravity, Gemini, Copilot\).) Tj
 0 -14 Td
 (Enfoque en resolucion analitica, arquitectura limpia y alta estabilidad operativa.) Tj
 0 -24 Td
@@ -37,9 +37,9 @@ function createSimplePDF() {
 (HTML5 semantico, CSS3, JavaScript ES6+, diseno responsive, UI/UX.) Tj
 0 -16 Td
 /F1 10 Tf
-(- Backend & Automatizaciones Web: ) Tj
+(- Backend & Automatizacion Web: ) Tj
 /F2 10 Tf
-(Node.js, APIs REST, automatizaciones web, JSON, logica modular y bundlers.) Tj
+(Node.js, APIs REST, automatizacion web, JSON, logica modular y bundlers.) Tj
 0 -16 Td
 /F1 10 Tf
 (- Herramientas & IA Agentica: ) Tj
