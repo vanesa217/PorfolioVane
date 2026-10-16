@@ -22,7 +22,7 @@ function createSimplePDF() {
 /F2 10 Tf
 (Estudio y perfil profesional fundado por Vanesa Carolina Tarelli. Fusiono el rigor de la) Tj
 0 -14 Td
-(Automatizacion y Control con el desarrollo web moderno y la asistencia de IA generativa.) Tj
+(Automatizacion y Control con desarrollo web moderno e IA agentica (Antigravity y Gemini).) Tj
 0 -14 Td
 (Disponible para proyectos B2B de empresas y contratacion en equipos de software.) Tj
 0 -24 Td
@@ -40,9 +40,9 @@ function createSimplePDF() {
 (Diagramas Ladder, electroneumatica, tableros de potencia y control.) Tj
 0 -16 Td
 /F1 10 Tf
-(- Consultoria & Asistencia con IA: ) Tj
+(- Desarrollo Acelerado con IA (Antigravity & Gemini): ) Tj
 /F2 10 Tf
-(Refactorizacion modular, prompt engineering y aceleracion de software.) Tj
+(Flujos agenticos con Antigravity, Gemini, Copilot, modularizacion y calidad.) Tj
 0 -24 Td
 /F1 12 Tf
 (PROYECTOS DESTACADOS) Tj
@@ -58,9 +58,9 @@ function createSimplePDF() {
 (Modularizacion en componentes legibles con asistencia IA.) Tj
 0 -16 Td
 /F1 10 Tf
-(- Asistencia IA en VS Code: ) Tj
+(- Flujos Agenticos con Antigravity, Gemini & Copilot: ) Tj
 /F2 10 Tf
-(Flujo de desarrollo optimizado con GitHub Copilot, Claude y ChatGPT.) Tj
+(Desarrollo acelerado integrando Google Antigravity, Gemini, Claude y ChatGPT.) Tj
 0 -24 Td
 /F1 12 Tf
 (CAPACIDADES TECNICAS) Tj
@@ -68,7 +68,7 @@ function createSimplePDF() {
 /F2 10 Tf
 (Frontend: HTML5, CSS3, JavaScript ES6+, Diseno Responsive, Git, Terminal Bash.) Tj
 0 -14 Td
-(Herramientas e IA: VS Code, GitHub Copilot, Claude, ChatGPT, Prompt Engineering.) Tj
+(Herramientas e IA: Google Antigravity, Google Gemini, Copilot, Claude, ChatGPT, VS Code.) Tj
 0 -14 Td
 (Automatizacion y Control: Diagrama Ladder, CADe SIMU, EPLAN, PSeInt, Electroneumatica.) Tj
 0 -24 Td
