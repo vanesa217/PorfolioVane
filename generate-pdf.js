@@ -6,25 +6,25 @@ function createSimplePDF() {
   const streamBody = `BT
 /F1 22 Tf
 50 790 Td
-(VT Solutions) Tj
+(VT Solutions - Vanesa Carolina Tarelli) Tj
 0 -24 Td
 /F1 13 Tf
-(Ingenieria de Software & Automatizacion Industrial) Tj
+(Desarrollo Frontend Moderno & Automatizacion Industrial) Tj
 0 -18 Td
 /F2 10 Tf
 (Berisso, Buenos Aires | tarellivanesacarolina@gmail.com) Tj
 0 -14 Td
-(LinkedIn: linkedin.com/in/vanesa-tarelli-1b93aa261) Tj
+(GitHub: github.com/vanesa217 | LinkedIn: linkedin.com/in/vanesa-tarelli-1b93aa261) Tj
 0 -26 Td
 /F1 12 Tf
-(PROPUESTA DE VALOR CORPORATIVA) Tj
+(PROPUESTA DE VALOR & PERFIL PROFESIONAL) Tj
 0 -16 Td
 /F2 10 Tf
-(VT Solutions es una firma tecnica que une el rigor de la Automatizacion y Control industrial) Tj
+(Estudio y perfil profesional fundado por Vanesa Carolina Tarelli. Fusiono el rigor de la) Tj
 0 -14 Td
-(con el desarrollo frontend moderno. Desarrollamos soluciones integrales de software y procesos) Tj
+(Automatizacion y Control con el desarrollo web moderno y la asistencia de IA generativa.) Tj
 0 -14 Td
-(optimizados con asistencia de Inteligencia Artificial para el sector corporativo e industrial.) Tj
+(Disponible para proyectos B2B de empresas y contratacion en equipos de software.) Tj
 0 -24 Td
 /F1 12 Tf
 (SERVICIOS Y SOLUCIONES) Tj
