@@ -1,4 +1,4 @@
-// Script to generate a clean, valid PDF file: public/cv.pdf
+// Script to generate a clean, valid PDF file: public/cv.pdf (VT Solutions Dossier Corporativo)
 import fs from 'fs';
 import path from 'path';
 
@@ -6,10 +6,10 @@ function createSimplePDF() {
   const streamBody = `BT
 /F1 22 Tf
 50 790 Td
-(Vanesa Carolina Tarelli) Tj
+(VT Solutions) Tj
 0 -24 Td
 /F1 13 Tf
-(Desarrolladora Frontend - HTML, CSS y JavaScript) Tj
+(Ingenieria de Software & Automatizacion Industrial) Tj
 0 -18 Td
 /F2 10 Tf
 (Berisso, Buenos Aires | tarellivanesacarolina@gmail.com) Tj
@@ -17,18 +17,32 @@ function createSimplePDF() {
 (LinkedIn: linkedin.com/in/vanesa-tarelli-1b93aa261) Tj
 0 -26 Td
 /F1 12 Tf
-(PERFIL PROFESIONAL) Tj
+(PROPUESTA DE VALOR CORPORATIVA) Tj
 0 -16 Td
 /F2 10 Tf
-(Tecnica Superior en Automatizacion y Control y Electricista Industrial.) Tj
+(VT Solutions es una firma tecnica que une el rigor de la Automatizacion y Control industrial) Tj
 0 -14 Td
-(Traigo la logica de los sistemas industriales al desarrollo web: analisis de requerimientos,) Tj
+(con el desarrollo frontend moderno. Desarrollamos soluciones integrales de software y procesos) Tj
 0 -14 Td
-(entradas, condiciones y salidas, y diagnostico con metodo al resolver incidencias.) Tj
-0 -14 Td
-(Desarrollo interfaces modernas, accesibles y responsivas con HTML5, CSS3 y JavaScript,) Tj
-0 -14 Td
-(incorporando herramientas de IA en el flujo de trabajo diario.) Tj
+(optimizados con asistencia de Inteligencia Artificial para el sector corporativo e industrial.) Tj
+0 -24 Td
+/F1 12 Tf
+(SERVICIOS Y SOLUCIONES) Tj
+0 -16 Td
+/F1 10 Tf
+(- Desarrollo Web & Frontend: ) Tj
+/F2 10 Tf
+(Interfaces corporativas, paneles interactivos, diseno responsivo y liviano.) Tj
+0 -16 Td
+/F1 10 Tf
+(- Automatizacion & Control Industrial: ) Tj
+/F2 10 Tf
+(Diagramas Ladder, electroneumatica, tableros de potencia y control.) Tj
+0 -16 Td
+/F1 10 Tf
+(- Consultoria & Asistencia con IA: ) Tj
+/F2 10 Tf
+(Refactorizacion modular, prompt engineering y aceleracion de software.) Tj
 0 -24 Td
 /F1 12 Tf
 (PROYECTOS DESTACADOS) Tj
@@ -49,7 +63,7 @@ function createSimplePDF() {
 (Flujo de desarrollo optimizado con GitHub Copilot, Claude y ChatGPT.) Tj
 0 -24 Td
 /F1 12 Tf
-(HABILIDADES TECNICAS) Tj
+(CAPACIDADES TECNICAS) Tj
 0 -16 Td
 /F2 10 Tf
 (Frontend: HTML5, CSS3, JavaScript ES6+, Diseno Responsive, Git, Terminal Bash.) Tj
@@ -59,7 +73,7 @@ function createSimplePDF() {
 (Automatizacion y Control: Diagrama Ladder, CADe SIMU, EPLAN, PSeInt, Electroneumatica.) Tj
 0 -24 Td
 /F1 12 Tf
-(EDUCACION Y FORMACION) Tj
+(RESPALDO TECNICO Y FORMACION) Tj
 0 -16 Td
 /F1 10 Tf
 (2020 - 2022 | Tecnicatura Superior en Automatizacion y Control) Tj
