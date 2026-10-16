@@ -34,7 +34,7 @@ function createSimplePDF() {
 /F1 10 Tf
 (- Frontend & Web: ) Tj
 /F2 10 Tf
-(HTML5 semantico, CSS3, JavaScript ES6+, diseno responsive, UI/UX, Git.) Tj
+(HTML5 semantico, CSS3, JavaScript ES6+, diseno responsive, UI/UX.) Tj
 0 -16 Td
 /F1 10 Tf
 (- Backend & Datos: ) Tj
