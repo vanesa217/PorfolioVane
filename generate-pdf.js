@@ -9,7 +9,7 @@ function createSimplePDF() {
 (Vanesa Carolina Tarelli) Tj
 0 -24 Td
 /F1 13 Tf
-(Desarrolladora Full Stack & Tecnica en Automatizacion y Control) Tj
+(Creadora Full Stack - Control & Automatizaciones Web) Tj
 0 -18 Td
 /F2 10 Tf
 (Berisso, Buenos Aires | tarellivanesacarolina@gmail.com) Tj
@@ -20,26 +20,26 @@ function createSimplePDF() {
 (PERFIL PROFESIONAL) Tj
 0 -16 Td
 /F2 10 Tf
-(Tecnica en Automatizacion y Control y Desarrolladora Full Stack. Combino el rigor) Tj
+(Creadora Full Stack y Tecnica en Automatizacion y Control. Articulo tres pilares:) Tj
 0 -14 Td
-(analitico de la ingenieria de control con el desarrollo web Full Stack y la IA.) Tj
+(creacion web Full Stack, contraloria tecnica y diagnostico de calidad en software,) Tj
 0 -14 Td
-(Desarrollo interfaces frontend interactivas junto a logica de backend, APIs y datos.) Tj
+(y automatizaciones web optimizadas con IA agentica \(Antigravity, Gemini, Copilot\).) Tj
 0 -14 Td
-(Enfoque en resolucion analitica de problemas, arquitectura limpia y aprendizaje.) Tj
+(Enfoque en resolucion analitica, arquitectura limpia y alta estabilidad operativa.) Tj
 0 -24 Td
 /F1 12 Tf
 (COMPETENCIAS TECNICAS) Tj
 0 -16 Td
 /F1 10 Tf
-(- Frontend & Web: ) Tj
+(- Creacion Frontend: ) Tj
 /F2 10 Tf
 (HTML5 semantico, CSS3, JavaScript ES6+, diseno responsive, UI/UX.) Tj
 0 -16 Td
 /F1 10 Tf
-(- Backend & Datos: ) Tj
+(- Backend & Automatizaciones Web: ) Tj
 /F2 10 Tf
-(Node.js, APIs REST, JSON, logica modular ES6, Vite y arquitectura limpia.) Tj
+(Node.js, APIs REST, automatizaciones web, JSON, logica modular y bundlers.) Tj
 0 -16 Td
 /F1 10 Tf
 (- Herramientas & IA Agentica: ) Tj
@@ -47,9 +47,9 @@ function createSimplePDF() {
 (Google Antigravity, Google Gemini, GitHub Copilot, Claude, ChatGPT, VS Code.) Tj
 0 -16 Td
 /F1 10 Tf
-(- Automatizacion & Control: ) Tj
+(- Contralor & Automatizacion: ) Tj
 /F2 10 Tf
-(Diagramas Ladder, electroneumatica, tableros electricos, CADe SIMU, EPLAN.) Tj
+(Contraloria tecnica, diagnostico metodico, diagramas Ladder, EPLAN, tableros.) Tj
 0 -24 Td
 /F1 12 Tf
 (PROYECTOS DESTACADOS) Tj
