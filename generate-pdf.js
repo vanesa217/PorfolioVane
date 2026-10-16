@@ -9,7 +9,7 @@ function createSimplePDF() {
 (Vanesa Carolina Tarelli) Tj
 0 -24 Td
 /F1 13 Tf
-(Desarrolladora Frontend & Tecnica en Automatizacion y Control) Tj
+(Desarrolladora Full Stack & Tecnica en Automatizacion y Control) Tj
 0 -18 Td
 /F2 10 Tf
 (Berisso, Buenos Aires | tarellivanesacarolina@gmail.com) Tj
@@ -20,13 +20,13 @@ function createSimplePDF() {
 (PERFIL PROFESIONAL) Tj
 0 -16 Td
 /F2 10 Tf
-(Tecnica en Automatizacion y Control y Desarrolladora Frontend. Combino el pensamiento) Tj
+(Tecnica en Automatizacion y Control y Desarrolladora Full Stack. Combino el rigor) Tj
 0 -14 Td
-(analitico de la ingenieria de control con el desarrollo web moderno y la IA agentica.) Tj
+(analitico de la ingenieria de control con el desarrollo web Full Stack y la IA.) Tj
 0 -14 Td
-(Construyo interfaces web modulares y accesibles con HTML5, CSS3 y JavaScript moderno.) Tj
+(Desarrollo interfaces frontend interactivas junto a logica de backend, APIs y datos.) Tj
 0 -14 Td
-(Disponible para incorporacion inmediata a equipos de desarrollo (Remoto / Hibrido).) Tj
+(Enfoque en resolucion analitica de problemas, arquitectura limpia y aprendizaje.) Tj
 0 -24 Td
 /F1 12 Tf
 (COMPETENCIAS TECNICAS) Tj
@@ -34,7 +34,12 @@ function createSimplePDF() {
 /F1 10 Tf
 (- Frontend & Web: ) Tj
 /F2 10 Tf
-(HTML5 semantico, CSS3, JavaScript ES6+, diseno responsive, Git, Terminal.) Tj
+(HTML5 semantico, CSS3, JavaScript ES6+, diseno responsive, UI/UX, Git.) Tj
+0 -16 Td
+/F1 10 Tf
+(- Backend & Datos: ) Tj
+/F2 10 Tf
+(Node.js, APIs REST, JSON, logica modular ES6, Vite y arquitectura limpia.) Tj
 0 -16 Td
 /F1 10 Tf
 (- Herramientas & IA Agentica: ) Tj
