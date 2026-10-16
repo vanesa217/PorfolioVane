@@ -543,6 +543,14 @@ img {
   min-width: 0;
 }
 
+.hero-badges-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.65rem;
+  margin-bottom: 1.1rem;
+}
+
 .status-badge {
   display: inline-flex;
   align-items: center;
@@ -552,12 +560,52 @@ img {
   font-weight: 500;
   color: var(--text-secondary);
   letter-spacing: 0.5px;
-  margin-bottom: 1rem;
   background-color: var(--bg-surface);
   border: 1px solid var(--border-color);
   padding: 0.35rem 0.85rem;
   border-radius: var(--radius-pill);
   max-width: 100%;
+}
+
+.hero-tech-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: var(--font-mono);
+  font-size: clamp(0.74rem, 2.2vw, 0.82rem);
+  color: var(--accent-cyan);
+  background: linear-gradient(90deg, rgba(0, 245, 196, 0.12), rgba(0, 245, 196, 0.04));
+  border: 1px solid rgba(0, 245, 196, 0.35);
+  box-shadow: 0 0 16px rgba(0, 245, 196, 0.15);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-pill);
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.hero-tech-badge strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+[data-theme="light"] .hero-tech-badge strong {
+  color: #0b222c;
+}
+
+.tech-badge-pulse {
+  display: inline-block;
+  animation: pulseGlow 1.8s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 4px var(--accent-cyan));
+  }
+  50% {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px var(--accent-cyan));
+  }
 }
 
 .status-dot {

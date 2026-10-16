@@ -48,9 +48,9 @@ function createSimplePDF() {
 (PROYECTOS DESTACADOS) Tj
 0 -16 Td
 /F1 10 Tf
-(- Portafolio Web Interactivo: ) Tj
+(- Portafolio Web VT Solutions: ) Tj
 /F2 10 Tf
-(Sitio web desarrollado sin frameworks, diseno responsivo y liviano.) Tj
+(Desarrollado en tiempo real con Google Antigravity, Gemini e IA agentica.) Tj
 0 -16 Td
 /F1 10 Tf
 (- Refactorizacion de Codigo JavaScript: ) Tj
