@@ -6,10 +6,10 @@ function createSimplePDF() {
   const streamBody = `BT
 /F1 22 Tf
 50 790 Td
-(Vanesa Carolina Tarelli) Tj
+(VT Solutions - Vanesa Carolina Tarelli) Tj
 0 -24 Td
 /F1 13 Tf
-(Creadora Full Stack - Control & Automatizacion Web) Tj
+(Desarrollo Frontend Moderno & Automatizacion Industrial) Tj
 0 -18 Td
 /F2 10 Tf
 (Berisso, Buenos Aires | tarellivanesacarolina@gmail.com) Tj
@@ -17,39 +17,32 @@ function createSimplePDF() {
 (GitHub: github.com/vanesa217 | LinkedIn: linkedin.com/in/vanesa-tarelli-1b93aa261) Tj
 0 -26 Td
 /F1 12 Tf
-(PERFIL PROFESIONAL) Tj
+(PROPUESTA DE VALOR & PERFIL PROFESIONAL) Tj
 0 -16 Td
 /F2 10 Tf
-(Creadora Full Stack y Tecnica en Automatizacion y Control. Articulo tres pilares:) Tj
+(Estudio y perfil profesional fundado por Vanesa Carolina Tarelli. Fusiono el rigor de la) Tj
 0 -14 Td
-(creacion web Full Stack, contraloria tecnica y diagnostico de calidad en software,) Tj
+(Automatizacion y Control con el desarrollo web moderno y la asistencia de IA generativa.) Tj
 0 -14 Td
-(y automatizacion web optimizada con IA agentica \(Antigravity, Gemini, Copilot\).) Tj
-0 -14 Td
-(Enfoque en resolucion analitica, arquitectura limpia y alta estabilidad operativa.) Tj
+(Disponible para proyectos B2B de empresas y contratacion en equipos de software.) Tj
 0 -24 Td
 /F1 12 Tf
-(COMPETENCIAS TECNICAS) Tj
+(SERVICIOS Y SOLUCIONES) Tj
 0 -16 Td
 /F1 10 Tf
-(- Creacion Frontend: ) Tj
+(- Desarrollo Web & Frontend: ) Tj
 /F2 10 Tf
-(HTML5 semantico, CSS3, JavaScript ES6+, diseno responsive, UI/UX.) Tj
+(Interfaces corporativas, paneles interactivos, diseno responsivo y liviano.) Tj
 0 -16 Td
 /F1 10 Tf
-(- Backend & Automatizacion Web: ) Tj
+(- Automatizacion & Control Industrial: ) Tj
 /F2 10 Tf
-(Node.js, APIs REST, automatizacion web, JSON, logica modular y bundlers.) Tj
+(Diagramas Ladder, electroneumatica, tableros de potencia y control.) Tj
 0 -16 Td
 /F1 10 Tf
-(- Herramientas & IA Agentica: ) Tj
+(- Consultoria & Asistencia con IA: ) Tj
 /F2 10 Tf
-(Google Antigravity, Google Gemini, GitHub Copilot, Claude, ChatGPT, VS Code.) Tj
-0 -16 Td
-/F1 10 Tf
-(- Contralor & Automatizacion: ) Tj
-/F2 10 Tf
-(Contraloria tecnica, diagnostico metodico, diagramas Ladder, EPLAN, tableros.) Tj
+(Refactorizacion modular, prompt engineering y aceleracion de software.) Tj
 0 -24 Td
 /F1 12 Tf
 (PROYECTOS DESTACADOS) Tj
@@ -57,20 +50,30 @@ function createSimplePDF() {
 /F1 10 Tf
 (- Portafolio Web Interactivo: ) Tj
 /F2 10 Tf
-(Desarrollado en tiempo real con Google Antigravity, Gemini e IA agentica.) Tj
+(Sitio web desarrollado sin frameworks, diseno responsivo y liviano.) Tj
 0 -16 Td
 /F1 10 Tf
-(- Refactorizacion Modular de JavaScript: ) Tj
+(- Refactorizacion de Codigo JavaScript: ) Tj
 /F2 10 Tf
-(Modularizacion en componentes legibles con asistencia iterativa de IA.) Tj
+(Modularizacion en componentes legibles con asistencia IA.) Tj
 0 -16 Td
 /F1 10 Tf
-(- Flujos Agenticos con Antigravity & Copilot: ) Tj
+(- Asistencia IA en VS Code: ) Tj
 /F2 10 Tf
-(Desarrollo acelerado integrando Google Antigravity, Gemini, Claude y ChatGPT.) Tj
+(Flujo de desarrollo optimizado con GitHub Copilot, Claude y ChatGPT.) Tj
 0 -24 Td
 /F1 12 Tf
-(FORMACION TECNICA) Tj
+(CAPACIDADES TECNICAS) Tj
+0 -16 Td
+/F2 10 Tf
+(Frontend: HTML5, CSS3, JavaScript ES6+, Diseno Responsive, Git, Terminal Bash.) Tj
+0 -14 Td
+(Herramientas e IA: VS Code, GitHub Copilot, Claude, ChatGPT, Prompt Engineering.) Tj
+0 -14 Td
+(Automatizacion y Control: Diagrama Ladder, CADe SIMU, EPLAN, PSeInt, Electroneumatica.) Tj
+0 -24 Td
+/F1 12 Tf
+(RESPALDO TECNICO Y FORMACION) Tj
 0 -16 Td
 /F1 10 Tf
 (2020 - 2022 | Tecnicatura Superior en Automatizacion y Control) Tj
