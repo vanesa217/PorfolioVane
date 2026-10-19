@@ -1,10 +1,15 @@
 {
-  "name": "vanesa-tarelli-portfolio",
+  "name": "sistema-supermercado",
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "description": "Sistema de gestión integral para supermercado con base de datos SQLite, control de stock automatizado y punto de venta multicanal",
   "scripts": {
-    "dev": "vite",
+    "start": "node server.js",
+    "dev": "node server.js",
+    "server": "node server.js",
+    "vite": "vite",
+    "portfolio": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
