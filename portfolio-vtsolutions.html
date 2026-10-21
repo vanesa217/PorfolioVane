@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VT Solutions · Desarrollo Web & Automatización Industrial</title>
+    <meta name="description" content="VT Solutions - Soluciones de desarrollo frontend moderno, ingeniería de control y automatización industrial con asistencia de IA para empresas. Buenos Aires." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <header class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#inicio" class="brand" aria-label="Inicio">
+          <span class="brand-vt">VT</span><span class="brand-dev">.solutions</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-links" id="navLinks">
+          <a href="#nosotros" class="nav-link">NOSOTROS</a>
+          <a href="#servicios" class="nav-link">SERVICIOS</a>
+          <a href="#proyectos" class="nav-link">PROYECTOS</a>
+          <a href="#tecnologias" class="nav-link">TECNOLOGÍAS</a>
+          <a href="#trayectoria" class="nav-link">TRAYECTORIA</a>
+          <a href="#contacto" class="nav-link">CONTACTO</a>
+        </nav>
+
+        <div class="nav-actions">
+          <!-- Theme Toggle Button -->
+          <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+            <span class="theme-icon">◐</span>
+            <span class="theme-label">Tema</span>
+          </button>
+
+          <!-- Mobile Menu Hamburger -->
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú" aria-expanded="false">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div class="mobile-menu" id="mobileMenu" aria-label="Menú principal móvil">
+        <a href="#nosotros" class="mobile-link">
+          <span>NOSOTROS</span>
+          <span class="mobile-link-num">01</span>
+        </a>
+        <a href="#servicios" class="mobile-link">
+          <span>SERVICIOS</span>
+          <span class="mobile-link-num">02</span>
+        </a>
+        <a href="#proyectos" class="mobile-link">
+          <span>PROYECTOS</span>
+          <span class="mobile-link-num">03</span>
+        </a>
+        <a href="#tecnologias" class="mobile-link">
+          <span>TECNOLOGÍAS</span>
+          <span class="mobile-link-num">04</span>
+        </a>
+        <a href="#trayectoria" class="mobile-link">
+          <span>TRAYECTORIA</span>
+          <span class="mobile-link-num">05</span>
+        </a>
+        <a href="#contacto" class="mobile-link">
+          <span>CONTACTO</span>
+          <span class="mobile-link-num">06</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Backdrop Overlay for Mobile Navigation -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay" aria-hidden="true"></div>
+
+    <main class="main-content" id="inicio">
+      <div class="container layout-wrapper">
+        <!-- Left Circuit Spine Decoration -->
+        <div class="circuit-spine" aria-hidden="true">
+          <div class="spine-line"></div>
+        </div>
+
+        <div class="content-flow">
+          <!-- HERO SECTION -->
+          <section class="hero-section" id="hero">
+            <div class="hero-grid">
+              <!-- Avatar / Corporate Crest with Neon Cyan Glow -->
+              <div class="hero-avatar-wrapper">
+                <div class="avatar-ring">
+                  <img src="/avatar.png" alt="VT Solutions · Vanesa Carolina Tarelli" class="avatar-img" />
+                </div>
+              </div>
+
+              <!-- Hero Info -->
+              <div class="hero-info">
+                <!-- Status Badge -->
+                <div class="status-badge">
+                  <span class="status-dot"></span>
+                  <span class="status-text">DISPONIBLE PARA PROYECTOS B2B & EQUIPOS DE DESARROLLO · BUENOS AIRES</span>
+                </div>
+
+                <!-- Name & Subtitle -->
+                <h1 class="hero-name">VT Solutions</h1>
+                <h2 class="hero-role">Vanesa Carolina Tarelli · Soluciones Web & Automatización Industrial</h2>
+
+                <p class="hero-bio">
+                  Estudio tecnológico y perfil profesional fundado por <strong>Vanesa Carolina Tarelli</strong>. Fusiono el rigor de la Automatización y Control Industrial con el desarrollo frontend moderno y la asistencia de IA. Desarrollamos soluciones a medida para empresas y estoy disponible para incorporarme a proyectos y equipos técnicos de alto rendimiento.
+                </p>
+
+                <!-- Action CTA Buttons -->
+                <div class="hero-actions">
+                  <a href="#contacto" class="btn btn-primary">Contactar / Cotizar Proyecto</a>
+                  <button class="btn btn-outline cv-open-btn" aria-label="Ver Dossier & CV en PDF">
+                    Dossier & CV (PDF)
+                  </button>
+                  <a href="https://github.com/vanesa217" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    GitHub ↗
+                  </a>
+                  <a href="https://www.linkedin.com/in/vanesa-tarelli-1b93aa261" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    LinkedIn ↗
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- NOSOTROS & SOBRE MÍ SECTION -->
+          <section class="section-block" id="nosotros">
+            <div class="section-header">
+              <div class="section-node-marker" aria-hidden="true"></div>
+              <span class="section-tag">SOBRE MÍ & VT SOLUTIONS</span>
+              <h2 class="section-title">Ingeniería de software con precisión industrial</h2>
+            </div>
+            <div class="section-body text-content">
+              <p>
+                Detrás de <strong>VT Solutions</strong> está <strong>Vanesa Carolina Tarelli</strong>, técnica en Automatización y Control y desarrolladora frontend. Concibo el software como un sistema de control integral: análisis riguroso de entradas, condiciones de negocio, interfaces limpias y diagnóstico metódico ante cualquier contingencia.
+              </p>
+              <p>
+                Esta estructura permite a las empresas contratar soluciones técnicas llave en mano (desarrollo web responsivo, automatización de procesos y optimización de código) o sumar a Vanesa como desarrolladora frontend en equipos de ingeniería que requieran autonomía, código modular prolijo y aceleración mediante herramientas de IA (GitHub Copilot, Claude y ChatGPT).
+              </p>
+            </div>
+          </section>
+
+          <!-- SERVICIOS SECTION -->
+          <section class="section-block" id="servicios">
+            <div class="section-header">
+              <div class="section-node-marker" aria-hidden="true"></div>
+              <span class="section-tag">SERVICIOS & SOLUCIONES</span>
+              <h2 class="section-title">Qué soluciones ofrecemos</h2>
+            </div>
+
+            <div class="services-grid">
+              <!-- Servicio 1: Desarrollo Web Frontend -->
+              <article class="service-card">
+                <div class="service-icon-box">💻</div>
+                <h3 class="service-title">Desarrollo Web & Plataformas Frontend</h3>
+                <p class="service-desc">
+                  Diseño y desarrollo de sitios corporativos, paneles de control e interfaces de usuario interactivas. Enfoque en velocidad de carga extrema, arquitectura limpia sin dependencias pesadas y diseño 100% responsivo.
+                </p>
+                <ul class="service-features">
+                  <li>HTML5 semántico y CSS3 moderno</li>
+                  <li>JavaScript ES6+ modular y escalable</li>
+                  <li>Optimización móvil y accesibilidad (WCAG)</li>
+                </ul>
+              </article>
+
+              <!-- Servicio 2: Automatización & Control Industrial -->
+              <article class="service-card">
+                <div class="service-icon-box">⚙️</div>
+                <h3 class="service-title">Automatización & Control Industrial</h3>
+                <p class="service-desc">
+                  Ingeniería aplicada a procesos productivos e instalaciones industriales. Programación de secuencias lógicas, diseño y dimensionamiento de tableros eléctricos, electroneumática y diagnóstico sistemático de fallas en planta.
+                </p>
+                <ul class="service-features">
+                  <li>Programación en Diagrama Ladder & PSeInt</li>
+                  <li>Simulación en CADe SIMU y esquemas EPLAN</li>
+                  <li>Montaje y cableado de tableros de control</li>
+                </ul>
+              </article>
+
+              <!-- Servicio 3: Consultoría & Optimización IA -->
+              <article class="service-card">
+                <div class="service-icon-box">⚡</div>
+                <h3 class="service-title">Consultoría & Asistencia con IA</h3>
+                <p class="service-desc">
+                  Auditoría, modernización y refactorización de código legado para empresas. Implementación de flujos de trabajo asistidos por modelos de inteligencia artificial para acelerar el desarrollo y elevar la mantenibilidad de software.
+                </p>
+                <ul class="service-features">
+                  <li>Refactorización modular de JavaScript</li>
+                  <li>Prompt engineering para ingeniería de software</li>
+                  <li>Aceleración de entregas y control de calidad</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <!-- PROYECTOS PRINCIPALES SECTION -->
+          <section class="section-block" id="proyectos">
+            <div class="section-header">
+              <div class="section-node-marker" aria-hidden="true"></div>
+              <span class="section-tag">PROYECTOS & CASOS TÉCNICOS</span>
+              <h2 class="section-title">Desarrollos y proyectos de Vanesa Tarelli</h2>
+            </div>
+
+            <div class="projects-grid">
+              <!-- Proyecto 1: Portafolio web interactivo -->
+              <article class="project-card">
+                <div class="project-mockup mockup-portfolio">
+                  <div class="mockup-window-header">
+                    <span class="window-dot dot-cyan"></span>
+                    <span class="window-bar"></span>
+                  </div>
+                  <div class="mockup-portfolio-cards">
+                    <div class="mini-card"></div>
+                    <div class="mini-card"></div>
+                    <div class="mini-card"></div>
+                  </div>
+                </div>
+                <div class="project-content">
+                  <span class="project-category">PROYECTO PERSONAL</span>
+                  <h3 class="project-title">Portafolio web interactivo</h3>
+                  <p class="project-desc">
+                    Sitio personal hecho desde cero, sin frameworks. Diseño responsive que se adapta a celular y escritorio, con animaciones livianas.
+                  </p>
+                  <div class="project-tags">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">JS Vanilla</span>
+                    <span class="tag">Responsive</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Proyecto 2: Refactorización de código JavaScript -->
+              <article class="project-card">
+                <div class="project-mockup mockup-code">
+                  <div class="mockup-code-editor">
+                    <div class="code-line"><span class="code-bracket">{</span> <span class="code-bar bar-long"></span></div>
+                    <div class="code-line"><span class="code-bar bar-med"></span></div>
+                    <div class="code-line"><span class="code-bar bar-long"></span></div>
+                    <div class="code-line"><span class="code-bracket">}</span> <span class="code-plus">+</span></div>
+                  </div>
+                </div>
+                <div class="project-content">
+                  <span class="project-category">DESARROLLO FRONTEND</span>
+                  <h3 class="project-title">Refactorización de código JavaScript</h3>
+                  <p class="project-desc">
+                    Reorganicé código JS en módulos más chicos y con nombres claros, usando prompts bien armados para revisar cada parte. El resultado es más fácil de leer y de mantener.
+                  </p>
+                  <div class="project-tags">
+                    <span class="tag">JavaScript ES6+</span>
+                    <span class="tag">Módulos</span>
+                    <span class="tag">Prompt Eng.</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Proyecto 3: Asistencia IA integrada en VS Code -->
+              <article class="project-card">
+                <div class="project-mockup mockup-vscode">
+                  <div class="mockup-vscode-sidebar">
+                    <span class="vbar"></span>
+                    <span class="vbar"></span>
+                    <span class="vbar"></span>
+                  </div>
+                  <div class="mockup-vscode-main">
+                    <div class="code-line"><span class="code-bar bar-long"></span></div>
+                    <div class="code-line"><span class="code-bar bar-short"></span></div>
+                    <div class="ai-prompt-box">
+                      <span class="ai-cursor"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-content">
+                  <span class="project-category">PROYECTO TÉCNICO</span>
+                  <h3 class="project-title">Asistencia IA integrada en VS Code</h3>
+                  <p class="project-desc">
+                    Configuré un entorno de trabajo con GitHub Copilot, Claude y ChatGPT para maquetar y depurar JavaScript con más agilidad.
+                  </p>
+                  <div class="project-tags">
+                    <span class="tag">VS Code</span>
+                    <span class="tag">GitHub Copilot</span>
+                    <span class="tag">Claude</span>
+                    <span class="tag">ChatGPT</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- GitHub Repos Callout -->
+            <div class="projects-repo-link">
+              <span class="projects-repo-text">¿Querés auditar el código fuente, commits y arquitectura?</span>
+              <a href="https://github.com/vanesa217" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                Ver repositorios en GitHub ↗
+              </a>
+            </div>
+          </section>
+
+          <!-- TECNOLOGÍAS SECTION -->
+          <section class="section-block" id="tecnologias">
+            <div class="section-header">
+              <div class="section-node-marker" aria-hidden="true"></div>
+              <span class="section-tag">TECNOLOGÍAS & STACK</span>
+              <h2 class="section-title">Capacidades técnicas e ingeniería</h2>
+            </div>
+
+            <div class="skills-columns-grid">
+              <!-- FRONTEND -->
+              <div class="skills-column">
+                <h3 class="skills-col-title">FRONTEND & WEB</h3>
+                <div class="tags-cluster">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript ES6+</span>
+                  <span class="tag">Diseño responsive</span>
+                  <span class="tag">Git</span>
+                  <span class="tag">Terminal (Bash)</span>
+                </div>
+              </div>
+
+              <!-- HERRAMIENTAS E IA -->
+              <div class="skills-column">
+                <h3 class="skills-col-title">HERRAMIENTAS E IA</h3>
+                <div class="tags-cluster">
+                  <span class="tag">VS Code</span>
+                  <span class="tag">GitHub Copilot</span>
+                  <span class="tag">Claude</span>
+                  <span class="tag">ChatGPT</span>
+                  <span class="tag">Prompt Engineering</span>
+                </div>
+              </div>
+
+              <!-- AUTOMATIZACIÓN Y CONTROL -->
+              <div class="skills-column">
+                <h3 class="skills-col-title">AUTOMATIZACIÓN Y CONTROL</h3>
+                <div class="tags-cluster">
+                  <span class="tag">Diagrama Ladder</span>
+                  <span class="tag">CADe SIMU</span>
+                  <span class="tag">EPLAN</span>
+                  <span class="tag">PSeInt</span>
+                  <span class="tag">Electroneumática</span>
+                  <span class="tag">Electrónica A/D</span>
+                  <span class="tag">Tableros eléctricos</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- METODOLOGÍA Y ESTÁNDARES -->
+            <div class="soft-skills-container">
+              <h3 class="skills-col-title">METODOLOGÍA & ESTÁNDARES DE CALIDAD</h3>
+              <ul class="circuit-list">
+                <li>
+                  <span class="circuit-branch-icon" aria-hidden="true"></span>
+                  <span>Pensamiento analítico y diagnóstico metódico</span>
+                </li>
+                <li>
+                  <span class="circuit-branch-icon" aria-hidden="true"></span>
+                  <span>Arquitectura modular y código escalable</span>
+                </li>
+                <li>
+                  <span class="circuit-branch-icon" aria-hidden="true"></span>
+                  <span>Comunicación técnica transparente y ágil</span>
+                </li>
+                <li>
+                  <span class="circuit-branch-icon" aria-hidden="true"></span>
+                  <span>Orientación a resultados y soporte continuo</span>
+                </li>
+                <li>
+                  <span class="circuit-branch-icon" aria-hidden="true"></span>
+                  <span>Documentación técnica y lectura en inglés</span>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- TRAYECTORIA SECTION -->
+          <section class="section-block" id="trayectoria">
+            <div class="section-header">
+              <div class="section-node-marker" aria-hidden="true"></div>
+              <span class="section-tag">TRAYECTORIA & RESPALDO</span>
+              <h2 class="section-title">Formación técnica y certificaciones</h2>
+            </div>
+
+            <!-- Academic Timeline -->
+            <div class="timeline-group">
+              <div class="timeline-item">
+                <span class="timeline-year">2020 – 2022</span>
+                <div class="timeline-details">
+                  <h3 class="timeline-title">Tecnicatura Superior en Automatización y Control</h3>
+                  <p class="timeline-subtitle">ISFT N° 193 "Astillero Río Santiago"</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-year">2020 – 2021</span>
+                <div class="timeline-details">
+                  <h3 class="timeline-title">Electricista Industrial</h3>
+                  <p class="timeline-subtitle">ISFT N° 193 "Astillero Río Santiago"</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-year">2020 – 2021</span>
+                <div class="timeline-details">
+                  <h3 class="timeline-title">Tecnología de la Representación</h3>
+                  <p class="timeline-subtitle">ISFT N° 193 "Astillero Río Santiago"</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- CONTACTO SECTION -->
+          <section class="section-block" id="contacto">
+            <div class="section-header">
+              <div class="section-node-marker" aria-hidden="true"></div>
+              <span class="section-tag">CONTACTO PROFESIONAL & B2B</span>
+              <h2 class="section-title">Iniciemos tu próximo proyecto o conversemos</h2>
+            </div>
+
+            <div class="contact-card">
+              <!-- Dual Proposal Columns -->
+              <div class="contact-dual-banner">
+                <div class="contact-dual-column">
+                  <span class="contact-dual-tag">PARA EMPRESAS & CLIENTES</span>
+                  <h4 class="contact-dual-heading">Servicios & Proyectos Llave en Mano</h4>
+                  <p class="contact-dual-text">Desarrollo web moderno, paneles interactivos, automatización industrial o modernización de software con IA. Coordinemos una reunión técnica o cotización para tu empresa.</p>
+                </div>
+                <div class="contact-dual-divider" aria-hidden="true"></div>
+                <div class="contact-dual-column">
+                  <span class="contact-dual-tag">PARA RECLUTADORES & EQUIPOS TECH</span>
+                  <h4 class="contact-dual-heading">Contratación & Talento Frontend</h4>
+                  <p class="contact-dual-text">¿Buscás sumar a Vanesa como desarrolladora frontend o técnica en automatización a tu equipo? Disponible para roles técnicos con autonomía, disciplina analítica y código prolijo.</p>
+                </div>
+              </div>
+
+              <!-- Direct Actions Container -->
+              <div class="contact-methods-stack">
+                <!-- Email Channel -->
+                <div class="contact-row">
+                  <div class="contact-data-box">
+                    <span class="data-icon">✉</span>
+                    <a href="mailto:tarellivanesacarolina@gmail.com" class="data-value email-link" id="emailVal">tarellivanesacarolina@gmail.com</a>
+                  </div>
+                  <div class="contact-row-actions">
+                    <a href="mailto:tarellivanesacarolina@gmail.com" class="btn btn-primary" title="Enviar consulta o solicitud">
+                      Escribir mensaje ↗
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Secondary Actions: LinkedIn, GitHub & Dossier / CV (PDF) -->
+              <div class="contact-footer-buttons">
+                <a href="https://www.linkedin.com/in/vanesa-tarelli-1b93aa261" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="linkedinBtn">
+                  LinkedIn ↗
+                </a>
+                <a href="https://github.com/vanesa217" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="githubBtn">
+                  GitHub ↗
+                </a>
+                <button class="btn btn-outline cv-open-btn" aria-label="Ver Dossier Corporativo & CV en PDF">
+                  Dossier & CV (PDF)
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <!-- FOOTER -->
+          <footer class="footer">
+            <p class="footer-text">VT Solutions · Vanesa Carolina Tarelli · Soluciones Web & Automatización · 2026</p>
+          </footer>
+        </div>
+      </div>
+    </main>
+
+    <!-- DOSSIER CORPORATIVO & CV MODAL VIEWER -->
+    <div class="cv-modal-backdrop" id="cvModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="cvModalTitle">
+      <div class="cv-modal-window">
+        <!-- Modal Header -->
+        <div class="cv-modal-header">
+          <div class="cv-modal-title-wrap">
+            <span class="cv-badge">DOSSIER CORPORATIVO & CV</span>
+            <h3 id="cvModalTitle">VT Solutions · Vanesa Carolina Tarelli</h3>
+          </div>
+          <div class="cv-modal-controls">
+            <button class="btn btn-primary btn-sm" id="cvPrintBtn" title="Imprimir o guardar como PDF">
+              <span class="btn-text">🖨 Imprimir / Guardar PDF</span>
+              <span class="btn-icon-compact" aria-hidden="true">🖨 Imprimir</span>
+            </button>
+            <a href="/cv.pdf" download="VT_Solutions_Vanesa_Tarelli_CV.pdf" class="btn btn-outline btn-sm" title="Descargar archivo PDF directo">
+              <span class="btn-text">📥 Descargar .PDF</span>
+              <span class="btn-icon-compact" aria-hidden="true">📥 .PDF</span>
+            </a>
+            <button class="btn-close-modal" id="cvCloseBtn" aria-label="Cerrar ventana de dossier">
+              ✕
+            </button>
+          </div>
+        </div>
+
+        <!-- Modal Body: Printable/Rendered Corporate Dossier -->
+        <div class="cv-modal-body" id="printableCV">
+          <div class="cv-paper">
+            <!-- Dossier Header -->
+            <div class="cv-paper-header">
+              <div class="cv-paper-avatar">
+                <img src="/avatar.png" alt="VT Solutions · Vanesa Carolina Tarelli" />
+              </div>
+              <div class="cv-paper-info">
+                <h1 class="cv-name">VT Solutions · Vanesa Carolina Tarelli</h1>
+                <h2 class="cv-title">Ingeniería de Software & Automatización Industrial</h2>
+                <p class="cv-degree">Desarrollo Web Moderno · Control de Procesos · Asistencia con Inteligencia Artificial</p>
+                <div class="cv-contact-chips">
+                  <span>📍 Berisso / La Plata / Buenos Aires</span>
+                  <span>✉ <a href="mailto:tarellivanesacarolina@gmail.com">tarellivanesacarolina@gmail.com</a></span>
+                  <span>🔗 <a href="https://www.linkedin.com/in/vanesa-tarelli-1b93aa261" target="_blank" rel="noopener noreferrer">linkedin.com/in/vanesa-tarelli-1b93aa261</a></span>
+                  <span>💻 <a href="https://github.com/vanesa217" target="_blank" rel="noopener noreferrer">github.com/vanesa217</a></span>
+                </div>
+              </div>
+            </div>
+
+            <hr class="cv-divider" />
+
+            <!-- Propuesta de Valor -->
+            <section class="cv-section">
+              <h3 class="cv-sec-title">PROPUESTA DE VALOR CORPORATIVA</h3>
+              <p class="cv-paragraph">
+                <strong>VT Solutions</strong> es una firma de servicios tecnológicos que une el pensamiento analítico y riguroso de la ingeniería en Automatización y Control con el desarrollo frontend moderno. Brindamos a empresas soluciones de software limpias, escalables y orientadas a resultados tangibles.
+              </p>
+              <p class="cv-paragraph">
+                Diseñamos interfaces web responsivas y de alto rendimiento utilizando HTML5, CSS3 y JavaScript moderno, eliminando complejidades innecesarias. Integramos herramientas de IA generativa (GitHub Copilot, Claude y ChatGPT) dentro de nuestros procesos de desarrollo para acelerar los ciclos de entrega, auditar la robustez del código y ofrecer respuestas rápidas ante las demandas del mercado.
+              </p>
+            </section>
+
+            <!-- Servicios Principales -->
+            <section class="cv-section">
+              <h3 class="cv-sec-title">SOLUCIONES Y SERVICIOS</h3>
+              <div class="cv-skills-grid">
+                <div>
+                  <strong>Desarrollo Web & Frontend:</strong>
+                  <p>Plataformas corporativas, paneles interactivos, maquetación responsive, accesibilidad WCAG y rendimiento web superior.</p>
+                </div>
+                <div>
+                  <strong>Automatización & Control:</strong>
+                  <p>Diagramas Ladder, electroneumática, cableado y diseño de tableros eléctricos, simulación CADe SIMU y esquemas EPLAN.</p>
+                </div>
+                <div>
+                  <strong>Consultoría & Optimización IA:</strong>
+                  <p>Refactorización y modernización de código JavaScript, prompt engineering técnico y flujos ágiles de trabajo.</p>
+                </div>
+                <div>
+                  <strong>Estándares de Entrega:</strong>
+                  <p>Pensamiento de diagnóstico metódico ante fallas, documentación técnica clara, control de versiones con Git y soporte dedicado.</p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Proyectos Destacados (Se conservan intactos) -->
+            <section class="cv-section">
+              <h3 class="cv-sec-title">PROYECTOS Y DESARROLLOS DESTACADOS</h3>
+              <div class="cv-item">
+                <div class="cv-item-header">
+                  <strong>Portafolio Web Interactivo</strong>
+                  <span class="cv-item-role">Proyecto Personal Frontend</span>
+                </div>
+                <p class="cv-item-desc">
+                  Sitio web desarrollado desde cero sin dependencias ni frameworks pesados. Diseño responsive optimizado para dispositivos móviles y de escritorio, con arquitectura de componentes CSS limpia, animaciones ligeras y selector de temas.
+                </p>
+              </div>
+
+              <div class="cv-item">
+                <div class="cv-item-header">
+                  <strong>Refactorización Modular de Código JavaScript</strong>
+                  <span class="cv-item-role">Desarrollo Frontend</span>
+                </div>
+                <p class="cv-item-desc">
+                  Reorganización de código JS monolítico en módulos independientes, reutilizables y con nomenclatura semántica clara. Uso de prompts iterativos con IA para code review y legibilidad.
+                </p>
+              </div>
+
+              <div class="cv-item">
+                <div class="cv-item-header">
+                  <strong>Flujo de Asistencia IA en VS Code</strong>
+                  <span class="cv-item-role">Optimización de Productividad</span>
+                </div>
+                <p class="cv-item-desc">
+                  Configuración de entorno de trabajo con extensiones y modelos de lenguaje para agilizar el maquetado, la generación de tests unitarios y la depuración rápida de código JavaScript.
+                </p>
+              </div>
+            </section>
+
+            <!-- Respaldo Técnico y Formación -->
+            <section class="cv-section">
+              <h3 class="cv-sec-title">RESPALDO TÉCNICO Y FORMACIÓN</h3>
+              <div class="cv-item">
+                <div class="cv-item-header">
+                  <strong>Tecnicatura Superior en Automatización y Control</strong>
+                  <span class="cv-item-date">2020 – 2022</span>
+                </div>
+                <p class="cv-item-sub">ISFT N° 193 "Astillero Río Santiago"</p>
+              </div>
+
+              <div class="cv-item">
+                <div class="cv-item-header">
+                  <strong>Electricista Industrial</strong>
+                  <span class="cv-item-date">2020 – 2021</span>
+                </div>
+                <p class="cv-item-sub">ISFT N° 193 "Astillero Río Santiago"</p>
+              </div>
+
+              <div class="cv-item">
+                <div class="cv-item-header">
+                  <strong>Tecnología de la Representación</strong>
+                  <span class="cv-item-date">2020 – 2021</span>
+                </div>
+                <p class="cv-item-sub">ISFT N° 193 "Astillero Río Santiago"</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notification for Copy Feedback -->
+    <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

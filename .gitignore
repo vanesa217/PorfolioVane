@@ -6,3 +6,14 @@ dist-ssr
 .env.*
 .vscode
 .idea
+
+# Archivos de supermercado locales
+supermercado.*
+database.js
+server.js
+iniciar-sistema.bat
+README-SUPERMERCADO.md
+public/app.js
+public/index.html
+public/style.css
+
