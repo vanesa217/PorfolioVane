@@ -12,6 +12,7 @@ supermercado.*
 database.js
 server.js
 iniciar-sistema.bat
+subir-a-github.bat
 README-SUPERMERCADO.md
 public/app.js
 public/index.html
