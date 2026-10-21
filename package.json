@@ -1,17 +1,15 @@
 {
-  "name": "sistema-supermercado",
+  "name": "vt-solutions-portfolio",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Sistema de gestión integral para supermercado con base de datos SQLite, control de stock automatizado y punto de venta multicanal",
+  "description": "VT Solutions - Portfolio web y servicios de desarrollo frontend y automatización",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js",
-    "server": "node server.js",
-    "vite": "vite",
-    "portfolio": "vite",
+    "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "node server.js",
+    "supermercado": "node server.js"
   },
   "devDependencies": {
     "vite": "^6.2.0"
