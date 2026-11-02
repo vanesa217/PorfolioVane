@@ -159,7 +159,16 @@
             <div class="services-grid">
               <!-- Servicio 1: Desarrollo Web Frontend -->
               <article class="service-card">
-                <div class="service-icon-box">💻</div>
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                    <polyline points="8 8 6 10 8 12"></polyline>
+                    <polyline points="16 8 18 10 16 12"></polyline>
+                    <line x1="13" y1="8" x2="11" y2="12"></line>
+                  </svg>
+                </div>
                 <h3 class="service-title">Desarrollo Web & Plataformas Frontend</h3>
                 <p class="service-desc">
                   Diseño y desarrollo de sitios corporativos, paneles de control e interfaces de usuario interactivas. Enfoque en velocidad de carga extrema, arquitectura limpia sin dependencias pesadas y diseño 100% responsivo.
@@ -173,7 +182,12 @@
 
               <!-- Servicio 2: Automatización & Control Industrial -->
               <article class="service-card">
-                <div class="service-icon-box">⚙️</div>
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1Z"></path>
+                  </svg>
+                </div>
                 <h3 class="service-title">Automatización & Control Industrial</h3>
                 <p class="service-desc">
                   Ingeniería aplicada a procesos productivos e instalaciones industriales. Programación de secuencias lógicas, diseño y dimensionamiento de tableros eléctricos, electroneumática y diagnóstico sistemático de fallas en planta.
@@ -187,7 +201,11 @@
 
               <!-- Servicio 3: Consultoría & Optimización IA -->
               <article class="service-card">
-                <div class="service-icon-box">⚡</div>
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                </div>
                 <h3 class="service-title">Consultoría & Asistencia con IA</h3>
                 <p class="service-desc">
                   Auditoría, modernización y refactorización de código legado para empresas. Implementación de flujos de trabajo asistidos por modelos de inteligencia artificial para acelerar el desarrollo y elevar la mantenibilidad de software.
@@ -445,7 +463,12 @@
                 <!-- Email Channel -->
                 <div class="contact-row">
                   <div class="contact-data-box">
-                    <span class="data-icon">✉</span>
+                    <span class="data-icon" aria-hidden="true">
+                      <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                      </svg>
+                    </span>
                     <a href="mailto:tarellivanesacarolina@gmail.com" class="data-value email-link" id="emailVal">tarellivanesacarolina@gmail.com</a>
                   </div>
                   <div class="contact-row-actions">
@@ -490,12 +513,40 @@
           </div>
           <div class="cv-modal-controls">
             <button class="btn btn-primary btn-sm" id="cvPrintBtn" title="Imprimir o guardar como PDF">
-              <span class="btn-text">🖨 Imprimir / Guardar PDF</span>
-              <span class="btn-icon-compact" aria-hidden="true">🖨 Imprimir</span>
+              <span class="btn-text">
+                <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                  <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                  <rect x="6" y="14" width="12" height="8"></rect>
+                </svg>
+                Imprimir / Guardar PDF
+              </span>
+              <span class="btn-icon-compact" aria-hidden="true">
+                <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                  <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                  <rect x="6" y="14" width="12" height="8"></rect>
+                </svg>
+                Imprimir
+              </span>
             </button>
             <a href="/cv.pdf" download="VT_Solutions_Vanesa_Tarelli_CV.pdf" class="btn btn-outline btn-sm" title="Descargar archivo PDF directo">
-              <span class="btn-text">📥 Descargar .PDF</span>
-              <span class="btn-icon-compact" aria-hidden="true">📥 .PDF</span>
+              <span class="btn-text">
+                <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Descargar .PDF
+              </span>
+              <span class="btn-icon-compact" aria-hidden="true">
+                <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                .PDF
+              </span>
             </a>
             <button class="btn-close-modal" id="cvCloseBtn" aria-label="Cerrar ventana de dossier">
               ✕
@@ -516,10 +567,35 @@
                 <h2 class="cv-title">Ingeniería de Software & Automatización Industrial</h2>
                 <p class="cv-degree">Desarrollo Web Moderno · Control de Procesos · Asistencia con Inteligencia Artificial</p>
                 <div class="cv-contact-chips">
-                  <span>📍 Berisso / La Plata / Buenos Aires</span>
-                  <span>✉ <a href="mailto:tarellivanesacarolina@gmail.com">tarellivanesacarolina@gmail.com</a></span>
-                  <span>🔗 <a href="https://www.linkedin.com/in/vanesa-tarelli-1b93aa261" target="_blank" rel="noopener noreferrer">linkedin.com/in/vanesa-tarelli-1b93aa261</a></span>
-                  <span>💻 <a href="https://github.com/vanesa217" target="_blank" rel="noopener noreferrer">github.com/vanesa217</a></span>
+                  <span>
+                    <svg class="chip-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    Berisso / La Plata / Buenos Aires
+                  </span>
+                  <span>
+                    <svg class="chip-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </svg>
+                    <a href="mailto:tarellivanesacarolina@gmail.com">tarellivanesacarolina@gmail.com</a>
+                  </span>
+                  <span>
+                    <svg class="chip-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                    <a href="https://www.linkedin.com/in/vanesa-tarelli-1b93aa261" target="_blank" rel="noopener noreferrer">linkedin.com/in/vanesa-tarelli-1b93aa261</a>
+                  </span>
+                  <span>
+                    <svg class="chip-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                      <line x1="8" x2="16" y1="21" y2="21"></line>
+                      <line x1="12" x2="12" y1="17" y2="21"></line>
+                    </svg>
+                    <a href="https://github.com/vanesa217" target="_blank" rel="noopener noreferrer">github.com/vanesa217</a>
+                  </span>
                 </div>
               </div>
             </div>
